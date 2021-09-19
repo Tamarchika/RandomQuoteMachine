@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+#quoteBox {
+  background-color: white;
+  color: #f14f6a;
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-style: italic;
+}
+
+body {
+  background-color: #f14f6a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+body:hover {
+  opacity: 1;
+}
+
+#text {
+  font-size: 34px;
+  margin: 8%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#author {
+  font-size: 24px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 5%;
+}
+
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#twitter {
+  font-size: 50px;
+  color: #f14f6a;
+}
+
+#tumblr {
+  font-size: 50px;
+  color: #f14f6a;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#newQuote {
+  margin-right: 10%;
+  width: 120px;
+  height: 50px;
+  border: none;
+  background-color: #f14f6a;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+#newQuote:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: .1;
+  }
+  25% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: .1;
+  }
+  25% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

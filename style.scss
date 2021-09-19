@@ -1,0 +1,109 @@
+$main-color: rgb(241, 79, 106);
+$text-font: 34px;
+$author-font: 24px;
+$flex: flex;
+$social-size: 50px;
+$newQuote: 20px;
+$border-radius: 15px;
+$font: 'Lato', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: $font;
+}
+#quoteBox {
+    background-color: white;
+    color: $main-color;
+    width: 500px;
+    height: 400px;
+    border-radius: $border-radius;
+    display: $flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+}
+body {
+    background-color: $main-color;
+    display: $flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation-name: fadeIn;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+body:hover {
+    opacity: 1;
+}
+#text {
+    font-size: $text-font;
+    margin: 8%;
+    font-weight: bold;
+    text-align: center;
+}
+#author {
+    font-size: $author-font;
+    align-self: flex-end;
+    margin-right: 5%;
+}
+.buttons {
+    width: 100%;
+    display: $flex;
+    justify-content: space-between;
+}
+#twitter {
+    font-size: $social-size;
+    color: $main-color;
+}
+#tumblr {
+    font-size: $social-size;
+    color: $main-color;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: .7;
+}
+.socials {
+    display: $flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+#newQuote {
+    margin-right: 10%;
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: $main-color;
+    font-size: $newQuote;
+    color: white;
+    border-radius: $border-radius;
+}
+#newQuote:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: .1;
+    }
+    25% {
+        opacity: .4;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
