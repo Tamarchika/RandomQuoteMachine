@@ -2,4 +2,4 @@
 JS + SCSS
 
 
-https://github.com/Tamarchika/RandomQuoteMachine.git
+https://github.com/Tamarchika/RandomQuoteMachine
